@@ -765,9 +765,9 @@
                         <label class="form-label" for="courseCheckoutState">State</label>
                         <select class="form-select" data-choices="" id="courseCheckoutState" required>
                           <option value="">Select State</option>
-                          <option value="Gujarat">Gujarat</option>
-                          <option value="Rajasthan">Rajasthan</option>
-                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Gujarat">Kota Padang</option>
+                          <option value="Rajasthan">Kab.Kep Mentawai</option>
+                          <option value="Maharashtra">Pariaman</option>
                         </select>
                         <div class="invalid-feedback">Please choose a State.</div>
                       </div>
@@ -776,7 +776,7 @@
                         <label class="form-label" for="courseCheckoutCountry">Country</label>
                         <select class="form-select" data-choices="" id="courseCheckoutCountry" name="courseCheckoutCountry" required>
                           <option value="">Select Country</option>
-                          <option value="India">India</option>
+                          <option value="India">Indonesia</option>
                           <option value="UK">UK</option>
                           <option value="USA">USA</option>
                         </select>
@@ -837,7 +837,7 @@
                               focusable="false"
                               data-prefix="fab"
                               data-icon="cc-amex"
-                              class="svg-inline--fa fa-cc-amex text-primary"
+                              class="svg-inline-- text-primary"
                               role="img"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 576 512">
@@ -896,7 +896,7 @@
                         </label>
                         <div class="input-group mb-2">
                           <input type="text" class="form-control" id="card-mask" placeholder="xxxx-xxxx-xxxx-xxxx" required />
-                          <span class="input-group-text" id="basic-addon2"><i class="fe fe-lock"></i></span>
+                          <span class="input-group-text" id="basic-addon2"><i data-feather="lock"></i></span>
                           <div class="invalid-feedback">Please enter card number.</div>
                         </div>
                         <small>Full name as displayed on card.</small>
@@ -931,7 +931,7 @@
                       <div class="col-12 col-md-4">
                         <label for="digit-mask" class="form-label">
                           CVV Code
-                          <i class="fe fe-help-circle ms-1 fs-6" data-bs-toggle="tooltip" data-placement="right" title="A 3 - digit number, typically printed on the back of a card."></i>
+                          <i data-feather="help-circle" class=" ms-1 fs-6" data-bs-toggle="tooltip" data-placement="right" title="A 3 - digit number, typically printed on the back of a card."></i>
                         </label>
                         <input type="password" class="form-control" name="cvv" id="digit-mask" placeholder="xxx" maxlength="3" required />
                         <div class="invalid-feedback">Please enter a code.</div>
@@ -947,7 +947,7 @@
                         <label class="form-label" for="courseCheckoutCountry2">Country</label>
                         <select class="form-select" data-choices="" id="courseCheckoutCountry2" name="courseCheckoutCountry2" required>
                           <option value="">Choose</option>
-                          <option value="India">India</option>
+                          <option value="India">Indonesia</option>
                           <option value="uk">UK</option>
                           <option value="usa">USA</option>
                         </select>
@@ -1009,8 +1009,8 @@
                     </p>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <span class="h3 mb-0 fw-bold text-primary">$</span>
-                    <div class="display-4 fw-bold text-primary">39</div>
+                    <span class="h3 mb-0 fw-bold text-primary">Rp</span>
+                    <div class="display-4 fw-bold text-primary">500,000</div>
                     <span class="align-self-end mb-1">/Monthly</span>
                   </div>
                 </div>
@@ -1235,15 +1235,15 @@
             <ul class="list-unstyled mb-0 d-flex flex-column nav nav-footer nav-x-0">
               <li>
                 Toll free:
-                <span class="fw-semibold">+1234 567 890</span>
+                <span class="fw-semibold">+62 838-5135-2380</span>
               </li>
               <li>
                 Time:
-                <span class="fw-semibold">9AM to 8:PM IST</span>
+                <span class="fw-semibold">09.00 - 20.00 WIB</span>
               </li>
               <li>
                 Email:
-                <span class="fw-semibold">example@gmail.com</span>
+                <span class="fw-semibold">anaileukodinggmail.com</span>
               </li>
             </ul>
           </div>
@@ -1289,6 +1289,10 @@
 
     <!-- Scripts -->
     <!-- Libs JS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace(); 
+    </script>
 <script src="../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
