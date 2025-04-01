@@ -41,7 +41,7 @@
           data-bs-target="#navDashboard"
           aria-expanded="false"
           aria-controls="navDashboard">
-          <i class="nav-icon fe fe-home me-2"></i>
+          <i data-feather="home" class="nav-icon me-2"></i>
           Dashboard
         </a>
         <div id="navDashboard" class="collapse " data-bs-parent="#sideNavbar">
@@ -58,7 +58,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false" aria-controls="navCourses">
-          <i class="nav-icon fe fe-book me-2"></i>
+          <i data-feather="book" class="nav-icon me-2"></i>
           Courses
         </a>
         <div id="navCourses" class="collapse " data-bs-parent="#sideNavbar">
@@ -78,7 +78,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navProfile" aria-expanded="false" aria-controls="navProfile">
-          <i class="nav-icon fe fe-user me-2"></i>
+          <i data-feather="user" class="nav-icon me-2"></i>
           User
         </a>
         <div id="navProfile" class="collapse " data-bs-parent="#sideNavbar">
@@ -96,7 +96,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navCMS" aria-expanded="false" aria-controls="navCMS">
-          <i class="nav-icon fe fe-book-open me-2"></i>
+          <i data-feather="book-open" class="nav-icon me-2"></i>
           CMS
         </a>
         <div id="navCMS" class="collapse " data-bs-parent="#sideNavbar">
@@ -119,7 +119,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link " href="#" data-bs-toggle="collapse" data-bs-target="#navProject" aria-expanded="false" aria-controls="navProject">
-          <i class="nav-icon fe fe-file me-2"></i>
+          <i data-feather="file" class="nav-icon me-2"></i>
           Project
         </a>
         <div id="navProject" class="collapse  show " data-bs-parent="#sideNavbar">
@@ -178,7 +178,7 @@
           data-bs-target="#navAuthentication"
           aria-expanded="false"
           aria-controls="navAuthentication">
-          <i class="nav-icon fe fe-lock me-2"></i>
+          <i data-feather="lock" class="nav-icon me-2"></i>
           Authentication
         </a>
         <div id="navAuthentication" class="collapse " data-bs-parent="#sideNavbar">
@@ -210,7 +210,7 @@
           data-bs-target="#navecommerce"
           aria-expanded="false"
           aria-controls="navecommerce">
-          <i class="nav-icon fe fe-shopping-bag me-2"></i>
+          <i data-feather="shopping-bag" class="nav-icon me-2"></i>
           Ecommerce
         </a>
         <div id="navecommerce" class="collapse " data-bs-parent="#sideNavbar">
@@ -282,7 +282,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navlayouts" aria-expanded="false" aria-controls="navlayouts">
-          <i class="nav-icon fe fe-layout me-2"></i>
+          <i data-feather="layout" class="nav-icon me-2"></i>
           Layouts
         </a>
         <div id="navlayouts" class="collapse " data-bs-parent="#sideNavbar">
@@ -311,7 +311,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link " href="../../pages/dashboard/chat-app.html">
-          <i class="nav-icon fe fe-message-square me-2"></i>
+          <i data-feather="message-square" class="nav-icon me-2"></i>
           Chat
         </a>
       </li>
@@ -394,7 +394,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navTables" aria-expanded="false" aria-controls="navTables">
-          <i class="nav-icon fe fe-database me-2"></i>
+          <i data-feather="database" class="nav-icon me-2"></i>
           Tables
         </a>
         <div id="navTables" class="collapse " data-bs-parent="#sideNavbar">
@@ -412,7 +412,7 @@
       <!-- Nav item -->
       <li class="nav-item">
         <a class="nav-link " href="../../pages/help-center.html">
-          <i class="nav-icon fe fe-help-circle me-2"></i>
+          <i data-feather="help-circle" class="nav-icon fme-2"></i>
           Help Center
         </a>
       </li>
@@ -425,7 +425,7 @@
           data-bs-target="#navSiteSetting"
           aria-expanded="false"
           aria-controls="navSiteSetting">
-          <i class="nav-icon fe fe-settings me-2"></i>
+          <i data-feather="settings" class="nav-icon me-2"></i>
           Site Setting
         </a>
         <div id="navSiteSetting" class="collapse " data-bs-parent="#sideNavbar">
@@ -460,7 +460,7 @@
           data-bs-target="#navMenuLevel"
           aria-expanded="false"
           aria-controls="navMenuLevel">
-          <i class="nav-icon fe fe-corner-left-down me-2"></i>
+          <i data-feather="corner-left-down" class="nav-icon me-2"></i>
           Menu Level
         </a>
         <div id="navMenuLevel" class="collapse " data-bs-parent="#sideNavbar">
@@ -535,14 +535,14 @@
       </li>
       <!-- Nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="../../docs/index.html">
+        <a class="nav-link" href="#">
           <i class="nav-icon fe fe-clipboard me-2"></i>
           Documentation
         </a>
       </li>
       <!-- Nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="../../docs/changelog.html">
+        <a class="nav-link" href="#">
           <i class="nav-icon fe fe-git-pull-request me-2"></i>
           Changelog
           <span class="text-primary ms-1" id="changelog"></span>
@@ -986,6 +986,10 @@
 
     <!-- Scripts -->
     <!-- Libs JS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace(); 
+    </script>
 <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
